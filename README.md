@@ -32,7 +32,8 @@
 
 
 
-Скриншоты результата работы программы 
+<img width="302" height="147" alt="image" src="https://github.com/user-attachments/assets/c6e83481-aa83-4e91-b6ec-7a36b5bb60a6" />
+
 
 
 
