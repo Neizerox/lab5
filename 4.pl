@@ -1,9 +1,9 @@
-% Membership
+% Принадлежность
 in(X, [X|_]).
 in(X, [_|T]) :-
     in(X, T).
 
-% Negation (complement)
+% Отрицание
 negate([], _, []).
 negate([X|U], A, Res) :-
     in(X, A),
@@ -12,7 +12,7 @@ negate([X|U], A, [X|Res]) :-
     \+ in(X, A),
     negate(U, A, Res).
 
-% Union
+% Объединение
 union([], B, B).
 union([X|A], B, Res) :-
     in(X, B),
@@ -21,7 +21,7 @@ union([X|A], B, [X|Res]) :-
     \+ in(X, B),
     union(A, B, Res).
 
-% Intersection
+% Пересечение
 intersect(_, [], []).
 intersect(A, [X|B], [X|Res]) :-
     in(X, A),
